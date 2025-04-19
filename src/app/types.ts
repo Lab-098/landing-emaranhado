@@ -1,5 +1,6 @@
 import { IAboutProps } from "@/presentation/modules/landing/components/AboutSection/types";
 import { IClientsProps } from "@/presentation/modules/landing/components/ClientsSection/types";
+import { IServicesProps } from "@/presentation/modules/landing/components/ServicesSection/types";
 
 interface IImagesProps {
   id: string;
@@ -11,6 +12,7 @@ interface ILandingProps {
   landing: {
     clients: IClientsProps;
     about: IAboutProps;
+    services: IServicesProps;
   };
 }
 
