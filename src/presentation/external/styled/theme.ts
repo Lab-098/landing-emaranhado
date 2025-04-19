@@ -2,10 +2,10 @@ export const theme = {
   colors: {
     white: {
       100: "#FFFFFF",
-      200: "#F0F0F0"
+      200: "#F0F0F0",
     },
     black: {
-      0: "#000000"
+      0: "#000000",
     },
     yellow: {
       500: "#FFC400",
@@ -32,11 +32,11 @@ export const theme = {
     text_sm: "2.2rem",
     text_md: "2.5rem",
     text_lg: "2.8rem",
-    text_xl: "3.5rem",
+    text_xl: "3.2rem",
     text_2xl: "4rem",
     text_3xl: "4.8rem",
     text_4xl: "5.6rem",
-    text_5xl: "6.4rem"
+    text_5xl: "6.4rem",
   },
   spacing: {
     "1x": "4px",
@@ -75,6 +75,7 @@ export const theme = {
     xs: "4px",
     sm: "8px",
     md: "16px",
+    lg: "28px",
     xl: "80px",
   },
   media: {
@@ -84,4 +85,4 @@ export const theme = {
   },
 } as const;
 
-export type TTheme = typeof theme; 
+export type TTheme = typeof theme;

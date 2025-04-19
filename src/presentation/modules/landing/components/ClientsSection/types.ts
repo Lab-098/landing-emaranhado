@@ -1,8 +1,4 @@
-interface IImagesProps {
-  id: string;
-  url: string;
-  alt: string;
-}
+import { IImagesProps } from "@/app/types";
 
 interface IClient {
   title: string;

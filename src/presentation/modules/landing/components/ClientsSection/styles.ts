@@ -2,7 +2,7 @@
 
 import styled, { css } from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 100%;
 
   ${({ theme }) => css`
