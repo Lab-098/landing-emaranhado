@@ -8,7 +8,9 @@ export function Content({ description, tags }: IContentProps) {
       <S.Content>
         <S.Description>{description}</S.Description>
         <S.TagsContainer>
-          {React.Children.toArray(tags.map((tag) => <S.Tag>{tag}</S.Tag>))}
+          {React.Children.toArray(
+            tags.map((tag, index) => <S.Tag key={index}>{tag}</S.Tag>)
+          )}
         </S.TagsContainer>
       </S.Content>
     </S.Container>

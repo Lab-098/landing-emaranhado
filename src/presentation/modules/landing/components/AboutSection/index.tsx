@@ -22,6 +22,7 @@ export function AboutSection({ data }: IAboutProps) {
             width={586}
             height={394}
           />
+          <AboutCard.Tags tags={content.tags} />
         </AboutCard.Root>
       </S.Content>
 
