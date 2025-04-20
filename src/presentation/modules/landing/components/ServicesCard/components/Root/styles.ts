@@ -1,9 +1,15 @@
 "use client";
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  width: 384px;
+  width: 368px;
   display: flex;
   flex-direction: column;
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      width: 384px;
+    }
+  `}
 `;

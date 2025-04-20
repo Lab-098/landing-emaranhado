@@ -14,7 +14,7 @@ export default function Landing() {
   return (
     <Page.Root>
       <Header />
-      <HeroSection />
+      <HeroSection data={landing.hero.data} />
       <ClientsSection data={landing.clients.data} />
       <AboutSection data={landing.about.data} />
       <ServicesSection data={landing.services.data} />

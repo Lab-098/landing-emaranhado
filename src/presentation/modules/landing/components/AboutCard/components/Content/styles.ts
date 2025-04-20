@@ -3,12 +3,16 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  max-width: 42%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 
   ${({ theme }) => css`
     gap: ${theme.spacing["7x"]};
+
+    @media ${theme.media.desktop} {
+      max-width: 42%;
+    }
   `}
 `;
 

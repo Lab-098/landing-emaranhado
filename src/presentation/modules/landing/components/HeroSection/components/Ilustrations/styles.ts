@@ -20,14 +20,46 @@ export const IllustrationSpore = styled(Image)<IStyleIllustrationProps>`
 
 export const IllustrationLeft = styled(Image)`
   position: absolute;
-  top: 77%;
+  top: 91%;
   left: 0;
   transform: translateY(-50%);
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      top: 77%;
+    }
+  `}
 `;
 
 export const IllustrationRight = styled(Image)`
   position: absolute;
-  top: 81%;
+  top: 94%;
   right: 0;
   transform: translateY(-50%);
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      top: 81%;
+    }
+  `}
+`;
+
+export const DesktopContainer = styled.div`
+  display: none;
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      display: block;
+    }
+  `}
+`;
+
+export const MobileContainer = styled.div`
+  display: block;
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      display: none;
+    }
+  `}
 `;

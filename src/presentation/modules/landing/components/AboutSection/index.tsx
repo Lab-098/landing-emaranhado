@@ -16,12 +16,15 @@ export function AboutSection({ data }: IAboutProps) {
             title={content.title}
             description={content.description}
           />
-          <S.StyledImage
-            src={content.image.url}
-            alt={content.image.alt}
-            width={586}
-            height={394}
-          />
+          <S.ContainerImg>
+            <S.StyledImage
+              src={content.image.url}
+              alt={content.image.alt}
+              layout="fill"
+              objectFit="cover"
+            />
+          </S.ContainerImg>
+
           <AboutCard.Tags tags={content.tags} />
         </AboutCard.Root>
       </S.Content>

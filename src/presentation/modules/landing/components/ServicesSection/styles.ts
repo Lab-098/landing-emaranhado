@@ -8,10 +8,16 @@ export const Container = styled.section`
   width: 100%;
 
   ${({ theme }) => css`
-    padding: ${theme.spacing["13x"]};
+    padding: ${theme.spacing["10x"]} ${theme.spacing["7x"]};
     background-color: ${theme.colors.white[200]};
-    border-top-left-radius: ${theme.spacing["16x"]};
-    border-top-right-radius: ${theme.spacing["16x"]};
+    border-top-left-radius: ${theme.spacing["12x"]};
+    border-top-right-radius: ${theme.spacing["12x"]};
+
+    @media ${theme.media.desktop} {
+      padding: ${theme.spacing["13x"]};
+      border-top-left-radius: ${theme.spacing["16x"]};
+      border-top-right-radius: ${theme.spacing["16x"]};
+    }
   `}
 `;
 
@@ -33,5 +39,14 @@ export const StyledTitle = styled(Title).attrs({
 export const CardsContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  ${({ theme }) => css`
+    gap: ${theme.spacing["7x"]};
+    @media ${theme.media.desktop} {
+      gap: ${theme.spacing["1x"]};
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  `}
 `;

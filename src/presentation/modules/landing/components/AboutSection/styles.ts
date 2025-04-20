@@ -11,8 +11,12 @@ export const Container = styled.section`
   position: relative;
 
   ${({ theme }) => css`
-    padding: ${theme.spacing["13x"]};
     z-index: ${theme.elevation[1]};
+    padding: ${theme.spacing["13x"]} ${theme.spacing["7x"]};
+
+    @media ${theme.media.desktop} {
+      padding: ${theme.spacing["13x"]};
+    }
   `}
 `;
 
@@ -22,7 +26,11 @@ export const Content = styled.div`
   flex-direction: column;
 
   ${({ theme }) => css`
-    gap: ${theme.spacing["13x"]};
+    gap: ${theme.spacing["10x"]};
+
+    @media ${theme.media.desktop} {
+      gap: ${theme.spacing["13x"]};
+    }
   `}
 `;
 
@@ -30,13 +38,31 @@ export const StyledTitle = styled(Title).attrs({
   color: theme.colors.blue[800],
 })``;
 
+export const ContainerImg = styled.div`
+  width: 100%;
+  height: 28rem;
+  position: relative;
+  margin-top: -50px;
+  transform: translateY(40%);
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      width: 58.6rem;
+      height: 39.4rem;
+      border-radius: ${theme.radius.lg};
+    }
+  `}
+`;
+
 export const StyledImage = styled(Image)`
-  width: 58.6rem;
-  height: 39.4rem;
   object-fit: cover;
 
   ${({ theme }) => css`
-    border-radius: ${theme.radius.lg};
+    border-radius: ${theme.radius.md};
+
+    @media ${theme.media.desktop} {
+      border-radius: ${theme.radius.lg};
+    }
   `}
 `;
 

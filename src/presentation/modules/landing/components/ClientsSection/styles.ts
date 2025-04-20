@@ -6,7 +6,11 @@ export const Container = styled.section`
   width: 100%;
 
   ${({ theme }) => css`
-    padding: ${theme.spacing["13x"]};
+    padding: ${theme.spacing["13x"]} ${theme.spacing["7x"]};
+
+    @media ${theme.media.desktop} {
+      padding: ${theme.spacing["13x"]};
+    }
   `}
 `;
 
@@ -36,4 +40,17 @@ export const ImagesContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+`;
+
+export const ContainerImg = styled.div`
+  width: 181px;
+  height: 101px;
+  position: relative;
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      width: 243px;
+      height: 136px;
+    }
+  `}
 `;
