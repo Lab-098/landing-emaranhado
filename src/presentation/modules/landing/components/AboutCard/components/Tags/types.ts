@@ -1,5 +1,12 @@
+type TTag =
+  | "Branding"
+  | "Resultados"
+  | "Estratégias"
+  | "Criatividade"
+  | "Comunicação";
+
 interface ITagProps {
   tags: string[];
 }
 
-export type { ITagProps };
+export type { ITagProps, TTag };

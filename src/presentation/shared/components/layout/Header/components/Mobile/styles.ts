@@ -4,8 +4,8 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.header`
   width: 100vw;
-  height: 100vh;
-  position: absolute;
+  height: 100dvh;
+  position: fixed;
   top: 0;
   right: 0;
   display: flex;
@@ -17,8 +17,8 @@ export const Container = styled.header`
 
 export const ContainerMenu = styled.div`
   width: 29.3rem;
-  height: 100vh;
-  position: absolute;
+  height: 100dvh;
+  position: fixed;
   top: 0;
   right: 0;
 

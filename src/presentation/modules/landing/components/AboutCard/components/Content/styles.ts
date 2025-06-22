@@ -20,10 +20,15 @@ export const Title = styled.h3`
   font-weight: 700;
   line-height: 37px;
   letter-spacing: 2%;
+  max-width: 80%;
 
   ${({ theme }) => css`
     color: ${theme.colors.white[100]};
     font-size: ${theme.fontSize.text_xl};
+
+    @media ${theme.media.desktop} {
+      max-width: 100%;
+    }
   `}
 `;
 

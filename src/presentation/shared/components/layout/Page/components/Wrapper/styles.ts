@@ -8,7 +8,7 @@ export const Container = styled.div`
 
   ${({ theme }) => css`
     @media ${theme.media.desktop} {
-      max-width: calc(100% - 22.4rem);
+      max-width: 1302px;
     }
   `}
 `;

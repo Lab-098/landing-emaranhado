@@ -1,6 +1,6 @@
 "use client";
 
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 58%;
@@ -28,4 +28,29 @@ export const TagsBottom = styled.div`
   max-width: 500px;
   padding: 0 2rem;
   margin-top: -0.5rem;
+`;
+
+export const DesktopContainer = styled.div`
+  display: none;
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      display: block;
+    }
+  `}
+`;
+
+export const MobileContainer = styled.div`
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      display: none;
+    }
+  `}
 `;

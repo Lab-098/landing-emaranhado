@@ -9,6 +9,7 @@ interface IStyleButtonProps {
   size?: TSizeButton;
   width?: number;
   height?: number;
+  layout: "default" | "full";
 }
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -16,6 +17,8 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: TSizeButton;
   width?: number;
   height?: number;
+  layout?: "default" | "full";
+  weight?: number;
 }
 
 export type { IButtonProps, IStyleButtonProps, TSizeMapProps };

@@ -26,6 +26,11 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
 
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+
   a {
     text-decoration: none;
   }

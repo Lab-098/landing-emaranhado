@@ -47,6 +47,8 @@ export const ContainerImg = styled.div`
 
   ${({ theme }) => css`
     @media ${theme.media.desktop} {
+      margin: 0;
+      transform: translateY(0);
       width: 58.6rem;
       height: 39.4rem;
       border-radius: ${theme.radius.lg};
@@ -66,12 +68,38 @@ export const StyledImage = styled(Image)`
   `}
 `;
 
-export const Illustration = styled(Image)`
+export const LeftIllustration = styled(Image)`
   position: absolute;
-  top: 80px;
-  left: 0px;
+  top: 105px;
+  left: -88px;
+  width: 428px;
+  height: auto;
 
   ${({ theme }) => css`
     z-index: ${theme.elevation[0]};
+
+    @media ${theme.media.desktop} {
+      width: 1083px;
+      height: 423px;
+      top: 80px;
+      left: 0px;
+    }
+  `}
+`;
+
+export const RightIllustration = styled(Image)`
+  position: absolute;
+  bottom: -90px;
+  right: 0px;
+  width: 428px;
+  height: auto;
+
+  ${({ theme }) => css`
+    z-index: ${theme.elevation[0]};
+
+    @media ${theme.media.desktop} {
+      width: 1083px;
+      height: 423px;
+    }
   `}
 `;

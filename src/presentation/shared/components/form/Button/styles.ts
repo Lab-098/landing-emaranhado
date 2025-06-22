@@ -19,7 +19,7 @@ export const Container = styled.button<IStyleButtonProps>`
   outline: none;
   border: none;
 
-  ${({ theme, width, height, size = "xs" }) => {
+  ${({ theme, width, height, size = "xs", layout }) => {
     const sizeKey = sizeMap[size];
 
     return css`
@@ -30,6 +30,11 @@ export const Container = styled.button<IStyleButtonProps>`
       background: ${theme.colors.yellow[500]};
       padding: ${theme.spacing[sizeKey]} ${theme.spacing["6x"]};
       border-radius: ${theme.radius.xl};
+
+      ${layout === "full" &&
+      css`
+        width: 100%;
+      `}
     `;
   }}
 
@@ -38,8 +43,8 @@ export const Container = styled.button<IStyleButtonProps>`
   }
 `;
 
-export const Title = styled.span`
-  font-weight: 500;
+export const Title = styled.span<{ weight: number }>`
+  font-weight: ${({ weight }) => weight};
   line-height: 150%;
 
   ${({ theme }) => css`

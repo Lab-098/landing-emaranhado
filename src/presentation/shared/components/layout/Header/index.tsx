@@ -19,6 +19,12 @@ export function Header() {
   };
 
   const handleToogleMenu = () => {
+    if (isOpen) {
+      document.body.classList.remove("no-scroll");
+    } else {
+      document.body.classList.add("no-scroll");
+    }
+
     setIsOpen((prev) => !prev);
   };
 
