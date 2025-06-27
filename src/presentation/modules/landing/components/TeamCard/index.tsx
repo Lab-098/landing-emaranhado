@@ -7,13 +7,7 @@ import * as S from "./styles";
 export function TeamCard({ image, name, role }: IMember) {
   return (
     <S.Container>
-      <S.StyledImage
-        src={image.url}
-        alt={image.alt}
-        fill
-        quality={100}
-        objectFit="cover"
-      />
+      <S.StyledImage src={image.url} alt={image.alt} fill />
       <S.Wave src={waveIllustration} alt="Wave illustration" quality={100} />
       <S.Content>
         <S.Name>{name}</S.Name>

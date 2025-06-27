@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { CldImage } from "next-cloudinary";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
@@ -11,10 +12,11 @@ export const Container = styled.div`
   border-radius: 20px;
 `;
 
-export const StyledImage = styled(Image)`
+export const StyledImage = styled(CldImage)`
   border-radius: 20px;
   position: absolute;
   z-index: ${({ theme }) => theme.elevation[2]};
+  object-fit: cover;
 `;
 
 export const Wave = styled(Image)`

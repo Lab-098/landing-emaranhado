@@ -1,6 +1,6 @@
 import { ITeamProps } from "@/presentation/modules/landing/components/TeamSection/types";
 
-const BASE_URL = "/images/team";
+// const BASE_URL = "/images/team";
 
 export const teamMock: ITeamProps = {
   data: {
@@ -11,7 +11,7 @@ export const teamMock: ITeamProps = {
         role: "Fundador e Diretor Executivo",
         image: {
           id: "elber-abreu",
-          url: `${BASE_URL}/Elber.jpg`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1750775623/Emaranhado_Criativo_-_RND_8394_k9i645.jpg",
           alt: "team photo",
         },
       },
@@ -20,7 +20,7 @@ export const teamMock: ITeamProps = {
         role: "Sócio e Diretor de Projetos",
         image: {
           id: "willian-nunes",
-          url: `${BASE_URL}/Willian.jpg`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1750775623/Emaranhado_Criativo_-_RND_8394_k9i645.jpg",
           alt: "team photo",
         },
       },
@@ -29,7 +29,7 @@ export const teamMock: ITeamProps = {
         role: "Diretor de Arte",
         image: {
           id: "victor-ramos",
-          url: `${BASE_URL}/Victor.png`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1750775623/Emaranhado_Criativo_-_RND_8394_k9i645.jpg",
           alt: "team photo",
         },
       },
@@ -38,7 +38,7 @@ export const teamMock: ITeamProps = {
         role: "Designer",
         image: {
           id: "ritta-kassya",
-          url: `${BASE_URL}/Ritta.jpg`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1750775623/Emaranhado_Criativo_-_RND_8394_k9i645.jpg",
           alt: "team photo",
         },
       },
@@ -47,7 +47,7 @@ export const teamMock: ITeamProps = {
         role: "Audiovisual",
         image: {
           id: "josias-bogea",
-          url: `${BASE_URL}/Josias.png`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1750775623/Emaranhado_Criativo_-_RND_8394_k9i645.jpg",
           alt: "team photo",
         },
       },
@@ -56,7 +56,7 @@ export const teamMock: ITeamProps = {
         role: "Audiovisual",
         image: {
           id: "darlan-gabriel",
-          url: `${BASE_URL}/Darlan.jpg`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1750775623/Emaranhado_Criativo_-_RND_8394_k9i645.jpg",
           alt: "team photo",
         },
       },
@@ -65,7 +65,7 @@ export const teamMock: ITeamProps = {
         role: "Fotografia",
         image: {
           id: "renan-irving",
-          url: `${BASE_URL}/Renan.jpg`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1750775623/Emaranhado_Criativo_-_RND_8394_k9i645.jpg",
           alt: "team photo",
         },
       },
@@ -74,7 +74,7 @@ export const teamMock: ITeamProps = {
         role: "Estagiária de Conteúdo",
         image: {
           id: "cassia-nogueira",
-          url: `${BASE_URL}/Cassia.jpg`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1750775623/Emaranhado_Criativo_-_RND_8394_k9i645.jpg",
           alt: "team photo",
         },
       },
