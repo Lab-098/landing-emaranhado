@@ -2,7 +2,7 @@ import { IFormFields } from "./types";
 
 export const defaultValuesForm: IFormFields = {
   email: "",
-  enterprise: "",
+  company: "",
   message: "",
   name: "",
   phone: "",
