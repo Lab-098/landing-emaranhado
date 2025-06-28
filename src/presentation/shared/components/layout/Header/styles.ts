@@ -23,6 +23,19 @@ export const Content = styled.div`
   justify-content: space-between;
 `;
 
+export const ContainerImg = styled.div`
+  width: 100px;
+  height: 70px;
+  position: relative;
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      width: 100px;
+      height: 64px;
+    }
+  `}
+`;
+
 export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;

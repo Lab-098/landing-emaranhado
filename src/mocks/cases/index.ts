@@ -1,7 +1,5 @@
 import { ICasesProps } from "@/presentation/modules/landing/components/CasesSection/types";
 
-const BASE_URL = "/images/cases";
-
 export const casesMock: ICasesProps = {
   data: {
     title: "Principais cases",
@@ -10,18 +8,18 @@ export const casesMock: ICasesProps = {
         id: "case-1",
         logoClient: {
           id: "JA Brasil",
-          url: `${BASE_URL}/ja_brasil/logo_ja_brasil.svg`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129730/logo_ja_brasil_kiq5iy.svg",
           alt: "Logo JA",
         },
         images: [
           {
             id: "JA Brasil 1",
-            url: `${BASE_URL}/ja_brasil/image_case_01.png`,
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129729/image_case_02_tqfovs.png",
             alt: "Imagem do evento JA Brasil",
           },
           {
             id: "JA Brasil 2",
-            url: `${BASE_URL}/ja_brasil/image_case_02.png`,
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129729/image_case_02_tqfovs.png",
             alt: "Imagem do evento JA Brasil",
           },
         ],
@@ -40,18 +38,18 @@ export const casesMock: ICasesProps = {
         id: "case-ja-pernambuco",
         logoClient: {
           id: "JA Pernambuco",
-          url: `${BASE_URL}/ja_pernambuco/logo_ja_pernambuco.svg`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129827/logo_ja_pernambuco_kmxckn.svg",
           alt: "Logo JA",
         },
         images: [
           {
             id: "JA Brasil 1",
-            url: `${BASE_URL}/ja_pernambuco/image_case_01.png`,
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129826/image_case_01_fdxs0p.png",
             alt: "Imagem do evento JA Brasil",
           },
           {
             id: "JA Brasil 2",
-            url: `${BASE_URL}/ja_pernambuco/image_case_02.png`,
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129826/image_case_02_axj7oc.png",
             alt: "Imagem do evento JA Brasil",
           },
         ],
@@ -66,18 +64,18 @@ export const casesMock: ICasesProps = {
         id: "case-paraiba",
         logoClient: {
           id: "Paraiba",
-          url: `${BASE_URL}/paraiba/logo_paraiba.svg`,
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129753/logo_paraiba_zqpghh.svg",
           alt: "Logo JA",
         },
         images: [
           {
             id: "Paraiba 1",
-            url: `${BASE_URL}/paraiba/image_case_01.png`,
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129750/image_case_01_iweazw.png",
             alt: "Imagem do evento Paraiba",
           },
           {
             id: "Paraiba 2",
-            url: `${BASE_URL}/paraiba/image_case_02.png`,
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129752/image_case_02_iwb4jz.png",
             alt: "Imagem do evento Paraiba",
           },
         ],

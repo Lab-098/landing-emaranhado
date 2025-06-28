@@ -1,7 +1,5 @@
 import { IAboutProps } from "@/presentation/modules/landing/components/AboutSection/types";
 
-const BASE_URL = "/images/about";
-
 export const aboutMock: IAboutProps = {
   data: {
     title: "Sobre nós",
@@ -18,7 +16,7 @@ export const aboutMock: IAboutProps = {
       ],
       image: {
         id: "Time Emaranhado",
-        url: `${BASE_URL}/time_emaranhado.svg`,
+        url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751128550/Emaranhado_Criativo_-_RND_8435_bc5pah.jpg",
         alt: "Foto composta pelos integrantes do time do Emaranhado Criativo",
       },
     },

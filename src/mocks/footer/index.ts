@@ -41,7 +41,7 @@ export const footerMock: IFooterProps = {
   data: {
     logo: {
       id: "emaranhado-logo",
-      url: `${BASE_URL}/logo_white.svg`,
+      url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751130115/logo_white_pqnido.svg",
       alt: "Emaranhado Criativo Logo",
     },
     title: "Somos um negócio do Emaranhado Hub.",
