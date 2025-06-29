@@ -2,6 +2,7 @@
 
 import { theme } from "@/presentation/external/styled";
 import { Title } from "@/presentation/shared/components/layout";
+import { motion } from "motion/react";
 import styled, { css } from "styled-components";
 
 export const Container = styled.section`
@@ -36,7 +37,7 @@ export const StyledTitle = styled(Title).attrs({
   color: theme.colors.blue[800],
 })``;
 
-export const CardsContainer = styled.div`
+export const CardsContainer = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: column;

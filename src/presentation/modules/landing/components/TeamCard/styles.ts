@@ -3,8 +3,9 @@
 import Image from "next/image";
 import { CldImage } from "next-cloudinary";
 import styled, { css } from "styled-components";
+import { motion } from "motion/react";
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   width: 280px;
   height: 280px;
   display: flex;

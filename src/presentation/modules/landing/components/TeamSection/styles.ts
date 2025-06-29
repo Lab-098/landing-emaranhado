@@ -4,6 +4,7 @@ import { theme } from "@/presentation/external/styled";
 import { Title } from "@/presentation/shared/components/layout";
 import styled, { css } from "styled-components";
 import bgDivider from "@/public/images/core/star.svg";
+import { motion } from "motion/react";
 
 export const Container = styled.section`
   width: 100%;
@@ -51,7 +52,7 @@ export const StyledTitle = styled(Title).attrs({
   text-align: center;
 `;
 
-export const CardsContainer = styled.div`
+export const CardsContainer = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: column;

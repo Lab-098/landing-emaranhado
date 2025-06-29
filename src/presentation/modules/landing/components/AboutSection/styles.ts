@@ -5,6 +5,7 @@ import styled, { css } from "styled-components";
 import { Title } from "@/presentation/shared/components/layout";
 import Image from "next/image";
 import { theme } from "@/presentation/external/styled";
+import { motion } from "motion/react";
 
 export const Container = styled.section`
   width: 100%;
@@ -20,13 +21,14 @@ export const Container = styled.section`
   `}
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-direction: column;
 
   ${({ theme }) => css`
     gap: ${theme.spacing["10x"]};
+    z-index: ${theme.elevation[1]};
 
     @media ${theme.media.desktop} {
       gap: ${theme.spacing["13x"]};

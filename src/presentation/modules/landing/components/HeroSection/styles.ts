@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "motion/react";
 import styled, { css } from "styled-components";
 
 export const Container = styled.section`
@@ -17,7 +18,7 @@ export const Container = styled.section`
   `}
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.div)`
   width: 100%;
   height: 100%;
   margin: auto;

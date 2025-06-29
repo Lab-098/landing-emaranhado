@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 import { Page, Title } from "@/presentation/shared/components/layout";
 import * as S from "./styles";
@@ -9,7 +10,6 @@ import { Button } from "@/presentation/shared/components/form";
 import { HiArrowSmallLeft, HiArrowSmallRight } from "react-icons/hi2";
 
 import SporeIllustration from "@/public/images/cases/spore.svg";
-import Image from "next/image";
 
 export function CasesSection({ data }: ICasesProps) {
   const [activeIndexCase, setActiveIndexCase] = useState<number>(0);

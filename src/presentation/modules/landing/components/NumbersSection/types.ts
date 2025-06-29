@@ -2,8 +2,9 @@ type TOrientation = "top" | "bottom";
 
 interface INumber {
   title: string;
-  number: string;
+  number: number;
   orientation?: TOrientation;
+  isPercentage?: boolean;
 }
 
 interface INumbers {

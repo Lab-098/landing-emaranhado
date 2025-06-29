@@ -2,6 +2,7 @@
 
 import styled, { css } from "styled-components";
 import { TOrientation } from "./types";
+import { motion } from "motion/react";
 
 export const Container = styled.section`
   width: 100%;
@@ -79,7 +80,7 @@ export const Card = styled.div<{ orientation: TOrientation }>`
   `}
 `;
 
-export const Number = styled.h5`
+export const Number = styled(motion.span)`
   font-weight: 500;
   text-align: center;
   line-height: 150%;

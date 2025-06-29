@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import { ServicesCard } from "../ServicesCard";
 import * as S from "./styles";
 import { IServicesProps } from "./types";
+
+import { cardVariants, containerVariants } from "./variants";
 import { Page } from "@/presentation/shared/components/layout";
 
 export function ServicesSection({ data }: IServicesProps) {
@@ -12,10 +15,15 @@ export function ServicesSection({ data }: IServicesProps) {
       <Page.Wrapper>
         <S.Content>
           <S.StyledTitle title={data.title} />
-          <S.CardsContainer>
+          <S.CardsContainer
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+          >
             {React.Children.toArray(
               cards.map((card) => (
-                <ServicesCard.Root key={card.id}>
+                <ServicesCard.Root key={card.id} variants={cardVariants}>
                   <ServicesCard.Header title={card.title} />
                   <ServicesCard.Content
                     description={card.description}

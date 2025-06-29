@@ -1,6 +1,7 @@
+import { MotionProps } from "motion/react";
 import { ReactNode } from "react";
 
-interface IRootProps {
+interface IRootProps extends MotionProps {
   children: ReactNode;
 }
 

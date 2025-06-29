@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "motion/react";
 import styled, { css } from "styled-components";
 
 export const Container = styled.section`
@@ -34,7 +35,7 @@ export const Title = styled.h5`
   `}
 `;
 
-export const ImagesContainer = styled.div`
+export const ImagesContainer = styled(motion.div)`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +43,7 @@ export const ImagesContainer = styled.div`
   align-items: center;
 `;
 
-export const ContainerImg = styled.div`
+export const ContainerImg = styled(motion.div)`
   width: 181px;
   height: 101px;
   position: relative;

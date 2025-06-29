@@ -1,6 +1,8 @@
 import { IImagesProps } from "@/app/types";
 
-interface IMember {
+import { MotionProps } from "motion/react";
+
+interface IMember extends MotionProps {
   name: string;
   role: string;
   image: IImagesProps;
