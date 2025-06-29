@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Kanit } from "next/font/google";
-import StyledComponentsRegistry from "@/lib/registry";
+import StyledComponentsRegistry from "./registry";
 import { GlobalStyle } from "@/presentation/external/styled";
 import { StyledProvider } from "@/presentation/external/styled/provider";
 
@@ -31,10 +31,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <StyledProvider>
-        <body className={`${kanit.variable} ${mollieRocky.variable}`}>
-          <GlobalStyle />
-          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-        </body>
+        <StyledComponentsRegistry>
+          <body className={`${kanit.variable} ${mollieRocky.variable}`}>
+            <GlobalStyle />
+            {children}
+          </body>
+        </StyledComponentsRegistry>
       </StyledProvider>
     </html>
   );
