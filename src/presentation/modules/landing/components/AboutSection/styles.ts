@@ -10,13 +10,15 @@ import { motion } from "motion/react";
 export const Container = styled.section`
   width: 100%;
   position: relative;
+  margin-bottom: 72px;
 
   ${({ theme }) => css`
     z-index: ${theme.elevation[1]};
-    padding: ${theme.spacing["13x"]} ${theme.spacing["7x"]};
+    padding: ${theme.spacing["10x"]} ${theme.spacing["7x"]};
 
     @media ${theme.media.desktop} {
       padding: ${theme.spacing["13x"]};
+      margin-bottom: 0;
     }
   `}
 `;
@@ -72,9 +74,9 @@ export const StyledImage = styled(Image)`
 
 export const LeftIllustration = styled(Image)`
   position: absolute;
-  top: 105px;
-  left: -88px;
-  width: 428px;
+  top: 66px;
+  left: -133px;
+  width: 597px;
   height: auto;
 
   ${({ theme }) => css`

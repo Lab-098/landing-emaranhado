@@ -11,8 +11,8 @@ export const Container = styled.section`
   ${({ theme }) => css`
     padding: ${theme.spacing["10x"]} ${theme.spacing["7x"]};
     background-color: ${theme.colors.white[200]};
-    border-top-left-radius: ${theme.spacing["12x"]};
-    border-top-right-radius: ${theme.spacing["12x"]};
+    border-top-left-radius: ${theme.spacing["9x"]};
+    border-top-right-radius: ${theme.spacing["9x"]};
 
     @media ${theme.media.desktop} {
       padding: ${theme.spacing["13x"]};
@@ -40,10 +40,12 @@ export const StyledTitle = styled(Title).attrs({
 export const CardsContainer = styled(motion.div)`
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
 
   ${({ theme }) => css`
     gap: ${theme.spacing["7x"]};
+
     @media ${theme.media.desktop} {
       gap: ${theme.spacing["1x"]};
       flex-direction: row;

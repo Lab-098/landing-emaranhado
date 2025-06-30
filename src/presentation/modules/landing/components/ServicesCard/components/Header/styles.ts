@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 199px;
+  height: 170px;
   background: linear-gradient(to right, #0046ff 0%, #19398e 100%);
 
   position: relative;
@@ -20,6 +20,12 @@ export const Container = styled.div`
 
   ${({ theme }) => css`
     border-radius: ${theme.radius.lg} ${theme.radius.lg} 0px 0px;
+  `}
+
+  ${({ theme }) => css`
+    @media ${theme.media.desktop} {
+      height: 199px;
+    }
   `}
 `;
 

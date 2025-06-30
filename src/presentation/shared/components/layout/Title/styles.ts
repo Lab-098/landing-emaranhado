@@ -8,7 +8,7 @@ export const Title = styled.h1<{ color?: string }>`
   ${({ theme, color }) => css`
     color: ${color || theme.colors.white[100]};
     font-family: ${theme.fonts.secondary};
-    font-size: ${theme.fontSize.text_lg};
+    font-size: 28px;
 
     @media ${theme.media.desktop} {
       font-size: ${theme.fontSize.text_4xl};

@@ -4,13 +4,17 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 259px;
-  background: radial-gradient(at 0% 100%, #034de2 34%, #07adff 100%);
+  height: 246px;
+  background: radial-gradient(at 0% 100%, #034de2 34%, #0572ed 100%);
 
   ${({ theme }) => css`
     border: 1px solid #07adff;
     border-radius: 0px 0px ${theme.radius.lg} ${theme.radius.lg};
     padding: ${theme.spacing["6x"]};
+
+    @media ${theme.media.desktop} {
+      height: 259px;
+    }
   `}
 `;
 

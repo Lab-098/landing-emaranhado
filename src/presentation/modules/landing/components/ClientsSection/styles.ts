@@ -7,7 +7,7 @@ export const Container = styled.section`
   width: 100%;
 
   ${({ theme }) => css`
-    padding: ${theme.spacing["13x"]} ${theme.spacing["7x"]};
+    padding: ${theme.spacing["10x"]} ${theme.spacing["7x"]};
 
     @media ${theme.media.desktop} {
       padding: ${theme.spacing["13x"]};
