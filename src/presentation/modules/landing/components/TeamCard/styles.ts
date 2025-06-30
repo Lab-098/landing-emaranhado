@@ -11,6 +11,7 @@ export const Container = styled(motion.div)`
   display: flex;
   position: relative;
   border-radius: 20px;
+  flex: 0 0 auto;
 `;
 
 export const StyledImage = styled(CldImage)`

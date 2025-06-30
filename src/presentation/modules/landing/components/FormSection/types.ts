@@ -1,5 +1,3 @@
-import { ISocialMedia } from "@/presentation/shared/components/layout/Footer/types";
-
 interface IFormFields {
   name: string;
   company: string;
@@ -11,7 +9,6 @@ interface IFormFields {
 interface IForm {
   title: string;
   subtitle: string;
-  socialMedia: ISocialMedia[];
 }
 
 interface IFormProps {

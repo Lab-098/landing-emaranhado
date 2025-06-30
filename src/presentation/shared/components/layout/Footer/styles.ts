@@ -134,6 +134,8 @@ export const TitleColumn = styled.p`
 
 export const SocialMediaContainer = styled.div`
   display: flex;
+  align-items: center;
+
   ${({ theme }) => css`
     gap: ${theme.spacing["6x"]};
   `}

@@ -9,6 +9,7 @@ import { Logo, Navigation } from "./components";
 import { Button } from "@/presentation/shared/components/form";
 import { useState } from "react";
 import { Mobile } from "./components/Mobile";
+import { AnimatePresence } from "motion/react";
 
 export function Header() {
   const router = useRouter();
@@ -45,7 +46,9 @@ export function Header() {
         </S.Content>
       </Page.Wrapper>
 
-      {isOpen ? <Mobile handleToogleMenu={handleToogleMenu} /> : null}
+      <AnimatePresence>
+        {isOpen ? <Mobile handleToogleMenu={handleToogleMenu} /> : null}
+      </AnimatePresence>
     </S.Container>
   );
 }

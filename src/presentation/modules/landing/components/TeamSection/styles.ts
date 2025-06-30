@@ -55,9 +55,34 @@ export const StyledTitle = styled(Title).attrs({
 export const CardsContainer = styled(motion.div)`
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  &::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.08), transparent);
+  }
+
+  &::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.08), transparent);
+  }
 
   ${({ theme }) => css`
     gap: ${theme.spacing["7x"]};
@@ -65,6 +90,12 @@ export const CardsContainer = styled(motion.div)`
     @media ${theme.media.desktop} {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      overflow: visible;
+      scroll-snap-type: none;
+      &::before,
+      &::after {
+        display: none;
+      }
     }
   `}
 `;

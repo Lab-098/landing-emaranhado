@@ -17,16 +17,9 @@ export function FormSection({ data }: IFormProps) {
     <S.Container>
       <Page.Wrapper>
         <S.Content>
-          <Info
-            title={data.title}
-            subtitle={data.subtitle}
-            socialMedia={data.socialMedia}
-          />
+          <Info title={data.title} subtitle={data.subtitle} />
           <Form />
-          <SocialMediaMobile
-            subtitle={data.subtitle}
-            socialMedia={data.socialMedia}
-          />
+          <SocialMediaMobile subtitle={data.subtitle} />
         </S.Content>
       </Page.Wrapper>
       <S.Illustration src={Illustration} alt="Illustração Emaranhado" />

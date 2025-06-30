@@ -5,19 +5,12 @@ interface INavigation {
   url: string;
 }
 
-interface ISocialMedia {
-  title: string;
-  url: string;
-  icon: IImagesProps;
-}
-
 interface IFooter {
   logo: IImagesProps;
   title: string;
   navigation: INavigation[];
   email: string;
   phone: string;
-  socialMedia: ISocialMedia[];
   developerFor: string;
   copyright: string;
 }
@@ -26,4 +19,4 @@ interface IFooterProps {
   data: IFooter;
 }
 
-export type { IFooterProps, ISocialMedia };
+export type { IFooterProps };

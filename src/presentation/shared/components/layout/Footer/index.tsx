@@ -2,9 +2,11 @@ import Link from "next/link";
 import * as S from "./styles";
 
 import { IFooterProps } from "./types";
-import Image from "next/image";
+
 import React from "react";
 import { Page } from "../Page";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { SiLinkedin } from "react-icons/si";
 
 export function Footer({ data }: IFooterProps) {
   return (
@@ -41,18 +43,24 @@ export function Footer({ data }: IFooterProps) {
               <S.Column>
                 <S.TitleColumn>Redes sociais</S.TitleColumn>
                 <S.SocialMediaContainer>
-                  {React.Children.toArray(
-                    data.socialMedia.map((social) => (
-                      <Link key={social.title} href={social.url}>
-                        <Image
-                          src={social.icon.url}
-                          alt={social.icon.alt}
-                          width={24}
-                          height={24}
-                        />
-                      </Link>
-                    ))
-                  )}
+                  <Link
+                    href="https://api.whatsapp.com/send?phone=5598985956037&text=Oi%2C%20Elber.%20Tudo%20bem%3F"
+                    target="_blank"
+                  >
+                    <FaWhatsapp size={22} color="#FFF" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/emaranhadocriativo/"
+                    target="_blank"
+                  >
+                    <FaInstagram size={22} color="#FFF" />
+                  </Link>
+                  <Link
+                    href="https://www.linkedin.com/company/emaranhadocriativolab/posts/?feedView=all"
+                    target="_blank"
+                  >
+                    <SiLinkedin size={18} color="#FFF" />
+                  </Link>
                 </S.SocialMediaContainer>
               </S.Column>
             </S.Main>
