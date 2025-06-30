@@ -27,12 +27,20 @@ export const Container = styled.div`
 
 export const Illustration = styled(Image)`
   display: none;
+  animation: spin 25s linear infinite;
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
   ${({ theme }) => css`
     @media ${theme.media.desktop} {
       position: absolute;
       top: -102px;
       right: -81px;
+      display: block;
     }
   `}
 `;
