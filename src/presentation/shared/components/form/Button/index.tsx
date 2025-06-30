@@ -2,7 +2,7 @@ import * as S from "./styles";
 import { IButtonProps } from "./types";
 
 export function Button({
-  title,
+  children,
   size,
   width,
   height,
@@ -18,7 +18,7 @@ export function Button({
       layout={layout}
       {...props}
     >
-      <S.Title weight={weight}>{title}</S.Title>
+      <S.Content weight={weight}>{children}</S.Content>
     </S.Container>
   );
 }

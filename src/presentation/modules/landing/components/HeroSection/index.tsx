@@ -22,7 +22,9 @@ export function HeroSection({ data }: IHeroProps) {
             <S.SubTitle>{data.subtitle.toUpperCase()}</S.SubTitle>
           </S.TextContainer>
 
-          <Button title="NOSSOS CASES" width={254} height={48} />
+          <Button width={254} height={48}>
+            NOSSOS CASES
+          </Button>
         </S.Content>
       </Page.Wrapper>
 

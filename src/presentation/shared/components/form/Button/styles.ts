@@ -39,15 +39,20 @@ export const Container = styled.button<IStyleButtonProps>`
   }}
 
   &:hover {
-    filter: brightness(0.8);
+    filter: brightness(0.9);
   }
 `;
 
-export const Title = styled.span<{ weight: number }>`
+export const Content = styled.span<{ weight: number }>`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-weight: ${({ weight }) => weight};
   line-height: 150%;
 
   ${({ theme }) => css`
     font-size: ${theme.fontSize.text_2xs};
+    gap: ${theme.spacing["2x"]};
   `};
 `;

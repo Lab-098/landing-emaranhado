@@ -8,6 +8,7 @@ import * as S from "./styles";
 import { ICase, ICasesProps } from "./types";
 import { Button } from "@/presentation/shared/components/form";
 import { HiArrowSmallLeft, HiArrowSmallRight } from "react-icons/hi2";
+import { FiArrowUpRight } from "react-icons/fi";
 
 import SporeIllustration from "@/public/images/cases/spore.svg";
 
@@ -82,11 +83,10 @@ export function CasesSection({ data }: ICasesProps) {
             </S.TextContent>
 
             <S.DesktopContainer>
-              <Button
-                title="Conferir o case"
-                layout="full"
-                onClick={handleRedirectToCase}
-              />
+              <Button layout="full" onClick={handleRedirectToCase} weight={400}>
+                CONFIRA O CASE
+                <FiArrowUpRight size={20} />
+              </Button>
             </S.DesktopContainer>
           </S.CaseContent>
           <S.CasesImagesContainer>
@@ -111,11 +111,9 @@ export function CasesSection({ data }: ICasesProps) {
           </S.CasesImagesContainer>
 
           <S.MobileContainer>
-            <Button
-              title="Conferir o case"
-              layout="full"
-              onClick={handleRedirectToCase}
-            />
+            <Button layout="full" onClick={handleRedirectToCase} weight={400}>
+              CONFIRA O CASE
+            </Button>
           </S.MobileContainer>
 
           <S.ContainerIllustration>

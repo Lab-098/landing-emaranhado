@@ -55,7 +55,9 @@ export function Form() {
         placeholder="Informe o assunto da sua mensagem"
       />
 
-      <Button type="submit" title="ENVIAR" size="sm" weight={700} />
+      <Button type="submit" size="sm" weight={700}>
+        ENVIAR
+      </Button>
     </S.Form>
   );
 }

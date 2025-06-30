@@ -36,7 +36,7 @@ export function Header() {
           <Logo />
           <S.DesktopContainer>
             <Navigation />
-            <Button title="ENTRE EM CONTATO" onClick={handleRedirectContact} />
+            <Button onClick={handleRedirectContact}>ENTRE EM CONTATO</Button>
           </S.DesktopContainer>
           <S.MobileContainer>
             <S.ButtonMenu onClick={handleToogleMenu}>

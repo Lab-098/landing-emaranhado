@@ -1,5 +1,5 @@
 import { theme } from "@/presentation/external/styled";
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
 type TSizeButton = "xs" | "sm" | "md" | "lg";
 
@@ -13,7 +13,7 @@ interface IStyleButtonProps {
 }
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  title: string;
+  children: ReactNode;
   size?: TSizeButton;
   width?: number;
   height?: number;
