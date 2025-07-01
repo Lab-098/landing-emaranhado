@@ -20,7 +20,7 @@ export function ClientsSection({ data }: IClientsProps) {
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.65 }}
           >
             {data.images.map((image) => (
               <S.ContainerImg key={image.id} variants={imageVariants}>
