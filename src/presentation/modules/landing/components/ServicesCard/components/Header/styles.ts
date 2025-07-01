@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 170px;
+  height: 189px;
   background: linear-gradient(to right, #0046ff 0%, #19398e 100%);
 
   position: relative;

@@ -6,6 +6,7 @@ export const Container = styled.div`
   width: 100%;
   height: 246px;
   background: radial-gradient(at 0% 100%, #034de2 34%, #0572ed 100%);
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.16);
 
   ${({ theme }) => css`
     border: 1px solid #07adff;
@@ -32,7 +33,11 @@ export const Description = styled.h5`
 
   ${({ theme }) => css`
     color: ${theme.colors.white[100]};
-    font-size: ${theme.fontSize.text_2xs};
+    font-size: 12px;
+
+    @media ${theme.media.desktop} {
+      font-size: 16px;
+    }
   `}
 `;
 

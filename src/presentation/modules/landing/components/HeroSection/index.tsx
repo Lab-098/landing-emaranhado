@@ -11,13 +11,13 @@ export function HeroSection({ data }: IHeroProps) {
   return (
     <S.Container>
       <Page.Wrapper>
-        <S.Content
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.3, ease: [0.25, 0.1, 0.25, 1] }}
-          viewport={{ once: false, amount: 0.3 }}
-        >
-          <S.TextContainer>
+        <S.Content>
+          <S.TextContainer
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.3, ease: [0.25, 0.1, 0.25, 1] }}
+            viewport={{ once: false, amount: 0.3 }}
+          >
             <S.Title>{data.title}</S.Title>
             <S.SubTitle>{data.subtitle.toUpperCase()}</S.SubTitle>
           </S.TextContainer>

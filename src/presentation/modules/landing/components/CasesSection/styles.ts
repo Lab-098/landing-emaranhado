@@ -5,11 +5,11 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
-  height: 1379px;
+  height: 1250px;
   position: relative;
 
   ${({ theme }) => css`
-    padding: ${theme.spacing["12x"]} ${theme.spacing["7x"]};
+    padding: ${theme.spacing["10x"]} ${theme.spacing["7x"]};
     background-color: ${theme.colors.blue[500]};
     border-bottom-left-radius: ${theme.spacing["9x"]};
     border-bottom-right-radius: ${theme.spacing["9x"]};
@@ -30,6 +30,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 
   ${({ theme }) => css`
     @media ${theme.media.desktop} {
@@ -163,10 +164,9 @@ export const MainServices = styled.p`
 
 export const CasesImagesContainer = styled.div`
   position: absolute;
-  top: 620px;
-  right: 30px;
+  top: 530px;
+  right: 0px;
 
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -176,14 +176,14 @@ export const CasesImagesContainer = styled.div`
 
     @media ${theme.media.desktop} {
       right: 128px;
-      top: 100px;
+      top: -10px;
     }
   `}
 `;
 
 export const ContainerImg = styled.div`
-  width: 309px;
-  height: 309px;
+  width: 270px;
+  height: 270px;
   position: relative;
 
   ${({ theme }) => css`

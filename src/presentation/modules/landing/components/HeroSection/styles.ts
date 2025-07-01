@@ -18,7 +18,7 @@ export const Container = styled.section`
   `}
 `;
 
-export const Content = styled(motion.div)`
+export const Content = styled.div`
   width: 100%;
   height: 100%;
   margin: auto;
@@ -38,7 +38,7 @@ export const Content = styled(motion.div)`
   `}
 `;
 
-export const TextContainer = styled.div`
+export const TextContainer = styled(motion.div)`
   max-width: 104.7rem;
   display: flex;
   flex-direction: column;
