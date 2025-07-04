@@ -12,6 +12,7 @@ export function Logo() {
         width={88}
         height={56}
         quality={100}
+        priority
       />
     </Link>
   );

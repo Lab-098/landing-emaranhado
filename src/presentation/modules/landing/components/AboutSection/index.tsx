@@ -2,8 +2,8 @@ import * as S from "./styles";
 import { IAboutProps } from "./types";
 import { AboutCard } from "../AboutCard/components";
 
-import LeftIllustration from "@/public/images/about/emaranhado_azul_left.png";
-import RightIllustration from "@/public/images/about/emaranahdo_azul_right.png";
+import LeftIllustration from "@/public/images/about/about_left.png";
+import RightIllustration from "@/public/images/about/about_right.png";
 import { Page } from "@/presentation/shared/components/layout";
 
 export function AboutSection({ data }: IAboutProps) {
@@ -37,10 +37,15 @@ export function AboutSection({ data }: IAboutProps) {
       <S.LeftIllustration
         src={LeftIllustration}
         alt="Illustração Emaranhado Azul"
+        width={893}
+        height={426}
+        quality={100}
       />
       <S.RightIllustration
         src={RightIllustration}
         alt="Illustração Emaranhado Azul"
+        width={893}
+        height={423}
       />
     </S.Container>
   );

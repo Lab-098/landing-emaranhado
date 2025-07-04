@@ -1,6 +1,6 @@
-import Spore from "@/public/images/core/hero_spore_orange.svg";
-import EmaranhadoLeft from "@/public/images/core/hero_emaranhado_left.svg";
-import EmaranhadoRight from "@/public/images/core/hero_emaranhado_right.svg";
+import Spore from "@/public/images/core/spore.png";
+import EmaranhadoLeft from "@/public/images/core/hero_left.png";
+import EmaranhadoRight from "@/public/images/core/hero_right.png";
 
 import * as S from "./styles";
 
@@ -29,20 +29,6 @@ export function Illustrations() {
           right={29}
           size={60}
         />
-
-        <S.IllustrationLeft
-          src={EmaranhadoLeft}
-          alt="Emaranhado da esquerda"
-          height={535}
-          width={542}
-        />
-
-        <S.IllustrationRight
-          src={EmaranhadoRight}
-          alt="Emaranhado da direita"
-          height={269}
-          width={459}
-        />
       </S.DesktopContainer>
       <S.MobileContainer>
         <S.IllustrationSpore
@@ -66,21 +52,22 @@ export function Illustrations() {
           right={16}
           size={40}
         />
-
-        <S.IllustrationLeft
-          src={EmaranhadoLeft}
-          alt="Emaranhado da esquerda"
-          height={472}
-          width={200}
-        />
-
-        <S.IllustrationRight
-          src={EmaranhadoRight}
-          alt="Emaranhado da direita"
-          height={254}
-          width={182}
-        />
       </S.MobileContainer>
+      <S.IllustrationLeft
+        src={EmaranhadoLeft}
+        alt="Emaranhado da esquerda"
+        width={649}
+        height={292}
+        priority
+      />
+
+      <S.IllustrationRight
+        src={EmaranhadoRight}
+        alt="Emaranhado da direita"
+        width={480}
+        height={274}
+        priority
+      />
     </>
   );
 }

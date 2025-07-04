@@ -7,6 +7,7 @@ import React from "react";
 import { Page } from "../Page";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { SiLinkedin } from "react-icons/si";
+import LogoImg from "@/public/images/core/logo.png";
 
 export function Footer({ data }: IFooterProps) {
   return (
@@ -17,8 +18,8 @@ export function Footer({ data }: IFooterProps) {
             <S.About>
               <S.ContainerImg>
                 <S.StyledImage
-                  src={data.logo.url}
-                  alt={data.logo.alt}
+                  src={LogoImg}
+                  alt="Logo Emaranhado Criativo"
                   layout="fill"
                 />
               </S.ContainerImg>

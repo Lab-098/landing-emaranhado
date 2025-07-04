@@ -1,12 +1,9 @@
-import { IImagesProps } from "@/app/types";
-
 interface INavigation {
   title: string;
   url: string;
 }
 
 interface IFooter {
-  logo: IImagesProps;
   title: string;
   navigation: INavigation[];
   email: string;

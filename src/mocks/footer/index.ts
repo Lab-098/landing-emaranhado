@@ -4,11 +4,6 @@ const year = new Date().getFullYear();
 
 export const footerMock: IFooterProps = {
   data: {
-    logo: {
-      id: "emaranhado-logo",
-      url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751130115/logo_white_pqnido.svg",
-      alt: "Emaranhado Criativo Logo",
-    },
     title: "Somos um negócio do Emaranhado Hub.",
     navigation: [
       {

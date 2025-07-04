@@ -74,18 +74,18 @@ export const StyledImage = styled(Image)`
 
 export const LeftIllustration = styled(Image)`
   position: absolute;
-  top: 66px;
-  left: -133px;
-  width: 597px;
+  top: 106px;
+  left: -100px;
+  width: 348px;
   height: auto;
 
   ${({ theme }) => css`
     z-index: ${theme.elevation[0]};
 
     @media ${theme.media.desktop} {
-      width: 1083px;
-      height: 423px;
-      top: 80px;
+      width: auto;
+      height: auto;
+      top: 108px;
       left: 0px;
     }
   `}
@@ -93,17 +93,17 @@ export const LeftIllustration = styled(Image)`
 
 export const RightIllustration = styled(Image)`
   position: absolute;
-  bottom: -90px;
+  bottom: -55px;
   right: 0px;
-  width: 428px;
-  height: auto;
+  width: 368px;
+  height: 199px;
 
   ${({ theme }) => css`
     z-index: ${theme.elevation[0]};
 
     @media ${theme.media.desktop} {
-      width: 1083px;
-      height: 423px;
+      width: auto;
+      height: auto;
     }
   `}
 `;

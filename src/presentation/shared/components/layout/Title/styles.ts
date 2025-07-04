@@ -9,6 +9,7 @@ export const Title = styled.h1<{ color?: string }>`
     color: ${color || theme.colors.white[100]};
     font-family: ${theme.fonts.secondary};
     font-size: 28px;
+    z-index: ${theme.elevation[2]};
 
     @media ${theme.media.desktop} {
       font-size: ${theme.fontSize.text_4xl};

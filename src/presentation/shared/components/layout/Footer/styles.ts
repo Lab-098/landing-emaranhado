@@ -71,7 +71,7 @@ export const ContainerImg = styled.div`
   ${({ theme }) => css`
     @media ${theme.media.desktop} {
       width: 120px;
-      height: 84px;
+      height: 82px;
     }
   `}
 `;
