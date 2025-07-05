@@ -8,7 +8,7 @@ import { Page } from "@/presentation/shared/components/layout";
 
 export function TeamSection({ data }: ITeamProps) {
   return (
-    <S.Container>
+    <S.Container id="team">
       <Page.Wrapper>
         <S.Content>
           <S.Divider />

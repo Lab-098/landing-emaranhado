@@ -5,7 +5,6 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
-  height: 1250px;
   position: relative;
 
   ${({ theme }) => css`
@@ -33,8 +32,10 @@ export const Content = styled.div`
   position: relative;
 
   ${({ theme }) => css`
+    gap: ${theme.spacing["8x"]};
     @media ${theme.media.desktop} {
       flex-direction: row;
+      gap: 0px;
     }
   `}
 `;
@@ -168,30 +169,28 @@ export const CasesImagesContainer = styled.div`
   right: 0px;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
 
   ${({ theme }) => css`
     z-index: ${theme.elevation[4]};
 
     @media ${theme.media.desktop} {
-      right: 128px;
-      top: -10px;
+      top: 74px;
     }
   `}
 `;
 
 export const ContainerImg = styled.div`
-  width: 270px;
-  height: 270px;
+  width: 174px;
+  height: 223px;
   position: relative;
 
   ${({ theme }) => css`
     border-radius: ${theme.spacing["5x"]};
 
     @media ${theme.media.desktop} {
-      width: 410px;
-      height: 410px;
+      width: 366px;
+      height: 457px;
     }
   `}
 `;
@@ -202,23 +201,63 @@ export const ContainerImgLogo = styled.div`
   height: 65px;
 `;
 
-export const TopImageCase = styled(Image)`
-  transform: rotate(3.4deg);
-
+export const FirstImageCase = styled(Image)`
   ${({ theme }) => css`
-    border-radius: ${theme.spacing["5x"]};
-    z-index: ${theme.elevation[5]};
+    border-radius: ${theme.spacing["3x"]};
+
+    @media ${theme.media.desktop} {
+      transform: rotate(-3.6deg);
+      transition:
+        transform 0.4s ease,
+        z-index 0.4s ease;
+      margin-top: 60px;
+      margin-left: 138px;
+      border-radius: ${theme.spacing["5x"]};
+      z-index: ${theme.elevation[5]};
+      &:hover {
+        transform: rotate(1deg) scale(1.05);
+        z-index: ${({ theme }) => theme.elevation[6]};
+      }
+    }
   `}
 `;
 
-export const BottomImageCase = styled(Image)`
-  transform: rotate(-4.46deg);
-  margin-top: -64px;
-  left: -38px !important;
+export const SecondImageCase = styled(Image)`
+  ${({ theme }) => css`
+    border-radius: ${theme.spacing["3x"]};
+
+    @media ${theme.media.desktop} {
+      transform: rotate(6.54deg);
+      margin-top: -64px;
+
+      transition:
+        transform 0.4s ease,
+        z-index 0.4s ease;
+
+      border-radius: ${theme.spacing["5x"]};
+      z-index: ${theme.elevation[4]};
+
+      &:hover {
+        transform: rotate(-2deg) scale(1.05);
+        z-index: ${({ theme }) => theme.elevation[6]};
+      }
+    }
+  `}
+`;
+
+export const MobileCasesImagesContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   ${({ theme }) => css`
-    border-radius: ${theme.spacing["5x"]};
-    z-index: ${theme.elevation[4]};
+    gap: ${theme.spacing["5x"]};
+    margin-bottom: ${theme.spacing["6x"]};
+
+    @media ${theme.media.desktop} {
+      display: none;
+    }
   `}
 `;
 

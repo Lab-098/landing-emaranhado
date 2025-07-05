@@ -88,8 +88,9 @@ export const CardsContainer = styled(motion.div)`
     gap: ${theme.spacing["7x"]};
 
     @media ${theme.media.desktop} {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       overflow: visible;
       scroll-snap-type: none;
       &::before,

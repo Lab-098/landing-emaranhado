@@ -5,7 +5,7 @@ import { IFooterProps } from "./types";
 
 import React from "react";
 import { Page } from "../Page";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { FaInstagram, FaWhatsapp, FaArrowUp } from "react-icons/fa6";
 import { SiLinkedin } from "react-icons/si";
 import LogoImg from "@/public/images/core/logo.png";
 
@@ -68,9 +68,22 @@ export function Footer({ data }: IFooterProps) {
           </S.TopContainer>
           <S.BottomContainer>
             <S.CopyrightContainer>
-              <S.Text>{data.developerFor}</S.Text>
+              <S.Text>
+                Desenvolvido por{" "}
+                <S.Redirect href="https://www.linkedin.com/in/marcus-vinicius-silva-costa/">
+                  Marcus Vinícius
+                </S.Redirect>{" "}
+                e{" "}
+                <S.Redirect href="https://www.linkedin.com/in/mirelescastro/">
+                  Mirele Castro
+                </S.Redirect>
+                .
+              </S.Text>
               <S.Text>{data.copyright}</S.Text>
             </S.CopyrightContainer>
+            <S.BackToTop href="#header">
+              Voltar ao topo <FaArrowUp size={16} color="#FFC400" />
+            </S.BackToTop>
           </S.BottomContainer>
         </S.Content>
       </Page.Wrapper>

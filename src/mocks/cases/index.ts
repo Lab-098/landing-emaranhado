@@ -5,7 +5,7 @@ export const casesMock: ICasesProps = {
     title: "Principais cases",
     cases: [
       {
-        id: "case-1",
+        id: "case-ja-brasil",
         logoClient: {
           id: "JA Brasil",
           url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129730/logo_ja_brasil_kiq5iy.svg",
@@ -14,17 +14,17 @@ export const casesMock: ICasesProps = {
         images: [
           {
             id: "JA Brasil 1",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129729/image_case_02_tqfovs.png",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751672226/FOTO_4_1_r0zmc7.png",
             alt: "Imagem do evento JA Brasil",
           },
           {
             id: "JA Brasil 2",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129729/image_case_02_tqfovs.png",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751672140/foto_1_trn7yv.jpg",
             alt: "Imagem do evento JA Brasil",
           },
         ],
         description:
-          "Evento realizado pela Junior Achievement em 3 capitais: Distrito Federal, Amapá e Salvador, impactando mais de 7.000 jovens.",
+          "NAUFest (Festival Internacional de Empreendedorismo e Inovação) evento realizado pela Junior Achievement em 3 capitais: Distrito Federal, Amapá e Salvador, impactando mais de 7.000 jovens. ",
         aboutService:
           "Identidade visual, posicionamento estratégico, presença digital e entregas publicitárias.",
         mainServices: [
@@ -43,14 +43,14 @@ export const casesMock: ICasesProps = {
         },
         images: [
           {
-            id: "JA Brasil 1",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129826/image_case_01_fdxs0p.png",
-            alt: "Imagem do evento JA Brasil",
+            id: "JA Pernambuco 1",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751676938/JA-Case_1_nxatob.png",
+            alt: "Imagem do evento JA Pernambuco",
           },
           {
-            id: "JA Brasil 2",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129826/image_case_02_axj7oc.png",
-            alt: "Imagem do evento JA Brasil",
+            id: "JA Pernambuco 2",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129826/image_case_01_fdxs0p.png",
+            alt: "Imagem do evento JA Pernambuco",
           },
         ],
         description:
@@ -61,32 +61,56 @@ export const casesMock: ICasesProps = {
         link: "https://jape.org.br/",
       },
       {
-        id: "case-paraiba",
+        id: "bw",
         logoClient: {
-          id: "Paraiba",
-          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129753/logo_paraiba_zqpghh.svg",
-          alt: "Logo JA",
+          id: "BW",
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129980/logo_bw_mpnt4d.svg",
+          alt: "Logo BW",
         },
         images: [
           {
-            id: "Paraiba 1",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129750/image_case_01_iweazw.png",
-            alt: "Imagem do evento Paraiba",
+            id: "BW 1",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751671943/4_vwpvzi.png",
+            alt: "Imagem do evento BW",
           },
           {
-            id: "Paraiba 2",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129752/image_case_02_iwb4jz.png",
-            alt: "Imagem do evento Paraiba",
+            id: "BW 2",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751672072/case_bw_otwsem.png",
+            alt: "Imagem do evento BW",
           },
         ],
-        description: "Uma das maiores redes de varejo do Nordeste.",
+        description:
+          "Empresa estratégica com foco em eventos e assessoria empresarial.",
         aboutService:
-          "Gestão de carreiras de influenciadores, com Rayssa Reis em campanhas de marketing e ações promocionais.",
-        mainServices: [
-          "Gestão de Carreiras de Influenciadores",
-          "Campanhas Publicitárias.",
+          "Desenvolvimento de branding completo e design visual estratégico para posicionamento no mercado.",
+        mainServices: ["Branding e Design Visual Estratégico."],
+        link: "https://www.instagram.com/p/C8e5pYWRx0t/",
+      },
+      {
+        id: "casas-brasil",
+        logoClient: {
+          id: "Casas Brasil",
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129968/logo_casas_brasil_mc9yth.svg",
+          alt: "Casas Brasil",
+        },
+        images: [
+          {
+            id: "Casas Brasil 1",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751672105/KV-MES-DAS-MA%CC%83ES_PEC%CC%A7AS-PEC%CC%A7A-CONCEITO-_ugrdwc.png",
+            alt: "Imagem do evento Casas Brasil",
+          },
+          {
+            id: "Casas Brasil 2",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751672105/Fotos-Produtos-1_kywoff.jpg",
+            alt: "Imagem do evento Casas Brasil",
+          },
         ],
-        link: "https://www.instagram.com/p/DC7Jsb5pZ5l/",
+        description:
+          "Rede varejista com foco em artigos para o lar e utilidades domésticas.",
+        aboutService:
+          "Gestão de conteúdo digital, crescimento de +2 mil seguidores em menos de 1 ano e média de 100 mil visualizações mensais.",
+        mainServices: ["Conteúdo Digital e Presença Digital"],
+        link: "https://www.instagram.com/casasbrasiloficial/",
       },
     ],
   },

@@ -16,7 +16,7 @@ export const aboutMock: IAboutProps = {
       ],
       image: {
         id: "Time Emaranhado",
-        url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751128550/Emaranhado_Criativo_-_RND_8435_bc5pah.jpg",
+        url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751671885/Emaranhado_Criativo_-_RND_8330_r5yjou.jpg",
         alt: "Foto composta pelos integrantes do time do Emaranhado Criativo",
       },
     },

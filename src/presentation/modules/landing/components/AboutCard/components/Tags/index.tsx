@@ -34,8 +34,8 @@ export function Tags({ tags }: ITagProps) {
         <Tag text={mobileNameTags.Branding.name} top={-18} left={4} />
         <Tag text={mobileNameTags.Resultados.name} top={18} right={12} />
         <Tag text={mobileNameTags.Estratégias.name} bottom={146} left={10} />
-        <Tag text={mobileNameTags.Criatividade.name} bottom={146} right={10} />
-        <Tag text={mobileNameTags.Comunicação.name} bottom={-74} left={136} />
+        <Tag text={mobileNameTags.Criatividade.name} bottom={154} right={10} />
+        <Tag text={mobileNameTags.Comunicação.name} bottom={-85} left={105} />
       </S.MobileContainer>
     </>
   );

@@ -8,7 +8,6 @@ interface IFooter {
   navigation: INavigation[];
   email: string;
   phone: string;
-  developerFor: string;
   copyright: string;
 }
 

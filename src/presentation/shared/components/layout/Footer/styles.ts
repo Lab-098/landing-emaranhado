@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import styled, { css } from "styled-components";
 
 export const Container = styled.section`
@@ -153,11 +154,15 @@ export const Item = styled.p`
 export const BottomContainer = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   ${({ theme }) => css`
+    gap: ${theme.spacing["7x"]};
+
     @media ${theme.media.desktop} {
-      justify-content: flex-end;
+      flex-direction: row;
+      justify-content: space-between;
     }
   `}
 `;
@@ -171,7 +176,7 @@ export const CopyrightContainer = styled.div`
 
   ${({ theme }) => css`
     @media ${theme.media.desktop} {
-      align-items: flex-end;
+      align-items: flex-start;
       text-align: end;
       gap: ${theme.spacing["1x"]};
     }
@@ -185,4 +190,36 @@ export const Text = styled.p`
     color: ${theme.colors.white[100]};
     font-size: ${theme.fontSize.text_3xs};
   `}
+`;
+
+export const Redirect = styled(Link)`
+  font-weight: 500;
+  transition: filter 0.3s;
+
+  ${({ theme }) => css`
+    color: ${theme.colors.white[100]};
+    font-size: ${theme.fontSize.text_3xs};
+  `}
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+`;
+
+export const BackToTop = styled(Link)`
+  font-weight: 400;
+  transition: filter 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ${({ theme }) => css`
+    color: ${theme.colors.white[100]};
+    font-size: ${theme.fontSize.text_2xs};
+    gap: ${theme.spacing["1x"]};
+  `}
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 `;

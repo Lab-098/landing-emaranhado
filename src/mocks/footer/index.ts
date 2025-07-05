@@ -29,7 +29,6 @@ export const footerMock: IFooterProps = {
     ],
     email: "emaranhado@gmail.com",
     phone: "(98) 98595-6037",
-    developerFor: "Desenvolvido por Lab098.",
     copyright: `© ${year} Emaranhado Criativo. Todos os direitos reservados.`,
   },
 };

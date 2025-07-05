@@ -11,7 +11,7 @@ export function ServicesSection({ data }: IServicesProps) {
   const { cards } = data;
 
   return (
-    <S.Container>
+    <S.Container id="services">
       <Page.Wrapper>
         <S.Content>
           <S.StyledTitle title={data.title} />

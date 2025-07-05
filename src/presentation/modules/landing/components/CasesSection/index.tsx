@@ -106,26 +106,49 @@ export function CasesSection({ data }: ICasesProps) {
                 </Button>
               </S.DesktopContainer>
             </S.CaseContent>
-            <S.CasesImagesContainer>
+            <S.DesktopContainer>
+              <S.CasesImagesContainer>
+                <S.ContainerImg>
+                  <S.FirstImageCase
+                    src={topImageCase.url}
+                    alt={topImageCase.alt}
+                    fill
+                    objectFit="cover"
+                    quality={100}
+                  />
+                </S.ContainerImg>
+                <S.ContainerImg>
+                  <S.SecondImageCase
+                    src={bottomImageCase.url}
+                    alt={bottomImageCase.alt}
+                    fill
+                    objectFit="cover"
+                    quality={100}
+                  />
+                </S.ContainerImg>
+              </S.CasesImagesContainer>
+            </S.DesktopContainer>
+
+            <S.MobileCasesImagesContainer>
               <S.ContainerImg>
-                <S.TopImageCase
+                <S.FirstImageCase
                   src={topImageCase.url}
                   alt={topImageCase.alt}
-                  layout="fill"
+                  fill
                   objectFit="cover"
                   quality={100}
                 />
               </S.ContainerImg>
               <S.ContainerImg>
-                <S.BottomImageCase
+                <S.SecondImageCase
                   src={bottomImageCase.url}
                   alt={bottomImageCase.alt}
-                  layout="fill"
+                  fill
                   objectFit="cover"
                   quality={100}
                 />
               </S.ContainerImg>
-            </S.CasesImagesContainer>
+            </S.MobileCasesImagesContainer>
 
             <S.MobileContainer>
               <Button layout="full" onClick={handleRedirectToCase} weight={400}>
