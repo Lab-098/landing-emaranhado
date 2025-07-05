@@ -26,6 +26,8 @@ export const Content = styled.div`
 
   ${({ theme }) => css`
     gap: ${theme.spacing["10x"]};
+    position: relative;
+    z-index: ${theme.elevation[3]};
 
     @media ${theme.media.desktop} {
       flex-direction: row;
@@ -110,6 +112,13 @@ export const SocialMediaIcon = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+
+  transition: filter 0.2s ease;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 
   ${({ theme }) => css`
     border-radius: ${theme.radius.xl};
@@ -151,6 +160,7 @@ export const Illustration = styled(Image)`
 
   ${({ theme }) => css`
     @media ${theme.media.desktop} {
+      z-index: ${theme.elevation[1]};
       display: block;
     }
   `}

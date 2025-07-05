@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Label = styled.label`
   font-size: 18px;
   font-weight: 400;
-  opacity: 0.8s;
+  opacity: 0.8;
 
   color: ${({ theme }) => theme.colors.white[200]};
 `;
@@ -46,4 +46,12 @@ export const Input = styled.input`
       opacity: 0.3;
     }
   `}
+`;
+
+export const Error = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8s;
+
+  color: ${({ theme }) => theme.colors.red[800]};
 `;

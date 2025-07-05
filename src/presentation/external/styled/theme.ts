@@ -25,7 +25,7 @@ export const theme = {
     },
   },
   fonts: {
-    primary: "var(--font-geist-sans)",
+    primary: "var(--font-kanit)",
     secondary: "var(--font-mollie-rocky)",
   },
   fontSize: {

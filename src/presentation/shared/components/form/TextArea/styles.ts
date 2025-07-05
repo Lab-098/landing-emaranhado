@@ -47,3 +47,11 @@ export const TextArea = styled.textarea`
     }
   `}
 `;
+
+export const Error = styled.p`
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8s;
+
+  color: ${({ theme }) => theme.colors.red[800]};
+`;
