@@ -8,6 +8,7 @@ export function Button({
   height,
   layout = "default",
   weight = 500,
+  isLoading,
   ...props
 }: IButtonProps) {
   return (
@@ -18,7 +19,9 @@ export function Button({
       layout={layout}
       {...props}
     >
-      <S.Content weight={weight}>{children}</S.Content>
+      <S.Content weight={weight}>
+        {isLoading ? <S.Spinner /> : children}
+      </S.Content>
     </S.Container>
   );
 }

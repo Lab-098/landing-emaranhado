@@ -5,6 +5,7 @@ import { GlobalStyle } from "@/presentation/external/styled";
 import { StyledProvider } from "@/presentation/external/styled/provider";
 
 import localFont from "next/font/local";
+import { ToastProvider } from "@/presentation/shared/components/layout/Toast/context/provider";
 
 const kanit = Kanit({
   variable: "--font-kanit",
@@ -32,10 +33,13 @@ export default function RootLayout({
     <html lang="pt-BR">
       <StyledProvider>
         <StyledComponentsRegistry>
-          <body className={`${kanit.variable} ${mollieRocky.variable}`}>
-            <GlobalStyle />
-            {children}
-          </body>
+          <ToastProvider>
+            <body className={`${kanit.variable} ${mollieRocky.variable}`}>
+              <GlobalStyle />
+              {children}
+              <div id="toast-root"></div>
+            </body>
+          </ToastProvider>
         </StyledComponentsRegistry>
       </StyledProvider>
     </html>

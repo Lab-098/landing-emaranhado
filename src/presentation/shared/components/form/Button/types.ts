@@ -19,6 +19,7 @@ interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   height?: number;
   layout?: "default" | "full";
   weight?: number;
+  isLoading?: boolean;
 }
 
 export type { IButtonProps, IStyleButtonProps, TSizeMapProps };

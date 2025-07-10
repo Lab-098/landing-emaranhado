@@ -1,6 +1,6 @@
 "use client";
 
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { IStyleButtonProps, TSizeMapProps } from "./types";
 
 const sizeMap: TSizeMapProps = {
@@ -9,6 +9,11 @@ const sizeMap: TSizeMapProps = {
   md: "5x",
   lg: "6x",
 };
+
+const rotate = keyframes`
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+`;
 
 export const Container = styled.button<IStyleButtonProps>`
   display: flex;
@@ -55,4 +60,16 @@ export const Content = styled.span<{ weight: number }>`
     font-size: ${theme.fontSize.text_2xs};
     gap: ${theme.spacing["2x"]};
   `};
+`;
+
+export const Spinner = styled.div`
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(0, 50, 104, 0.3);
+
+  ${({ theme }) => css`
+    border-top: 3px solid ${theme.colors.blue[800]};
+  `};
+  border-radius: 50%;
+  animation: ${rotate} 0.7s linear infinite;
 `;
