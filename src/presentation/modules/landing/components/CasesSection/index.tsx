@@ -7,7 +7,7 @@ import { Page, Title } from "@/presentation/shared/components/layout";
 import * as S from "./styles";
 import { ICase, ICasesProps } from "./types";
 import { Button } from "@/presentation/shared/components/form";
-import { HiArrowSmallLeft, HiArrowSmallRight } from "react-icons/hi2";
+import { PiArrowLeftBold, PiArrowRightBold } from "react-icons/pi";
 import { FiArrowUpRight } from "react-icons/fi";
 
 import SporeIllustration from "@/public/images/cases/spore.svg";
@@ -61,10 +61,10 @@ export function CasesSection({ data }: ICasesProps) {
                 <Title title={data.title} />
                 <S.ActionContent>
                   <S.ButtonMenu type="button" onClick={handleBackCase}>
-                    <HiArrowSmallLeft color="#FFF" size={19} />
+                    <PiArrowLeftBold color="#FFF" size={19} />
                   </S.ButtonMenu>
                   <S.ButtonMenu type="button" onClick={handleNextCase}>
-                    <HiArrowSmallRight color="#FFF" size={19} />
+                    <PiArrowRightBold color="#FFF" size={19} />
                   </S.ButtonMenu>
                 </S.ActionContent>
               </S.TitleSection>

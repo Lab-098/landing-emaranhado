@@ -14,7 +14,7 @@ export const casesMock: ICasesProps = {
         images: [
           {
             id: "JA Brasil 1",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751672226/FOTO_4_1_r0zmc7.png",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752119069/FOTO_4_1_3_p4dmpl.png",
             alt: "Imagem do evento JA Brasil",
           },
           {
@@ -70,12 +70,12 @@ export const casesMock: ICasesProps = {
         images: [
           {
             id: "BW 1",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751671943/4_vwpvzi.png",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752116911/4_2_ppbvvv.png",
             alt: "Imagem do evento BW",
           },
           {
             id: "BW 2",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751672072/case_bw_otwsem.png",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752117105/case_bw_1_zryhdw.png",
             alt: "Imagem do evento BW",
           },
         ],
@@ -96,12 +96,12 @@ export const casesMock: ICasesProps = {
         images: [
           {
             id: "Casas Brasil 1",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751672105/KV-MES-DAS-MA%CC%83ES_PEC%CC%A7AS-PEC%CC%A7A-CONCEITO-_ugrdwc.png",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752118935/KV-MES-DAS-MA%CC%83ES_PEC%CC%A7AS-PEC%CC%A7A-CONCEITO-_1_shgjdg.png",
             alt: "Imagem do evento Casas Brasil",
           },
           {
             id: "Casas Brasil 2",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751672105/Fotos-Produtos-1_kywoff.jpg",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752118933/Fotos-Produtos-1_1_p21rgu.png",
             alt: "Imagem do evento Casas Brasil",
           },
         ],
