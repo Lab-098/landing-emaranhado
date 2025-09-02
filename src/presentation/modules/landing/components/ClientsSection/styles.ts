@@ -51,7 +51,7 @@ export const ContainerImg = styled(motion.div)`
   ${({ theme }) => css`
     @media ${theme.media.desktop} {
       width: 243px;
-      height: 136px;
+      height: 112px;
     }
   `}
 `;
