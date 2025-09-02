@@ -24,7 +24,7 @@ export function ClientsSection({ data }: IClientsProps) {
           >
             {data.images.map((image) => (
               <S.ContainerImg key={image.id} variants={imageVariants}>
-                <Image src={image.url} alt={image.alt} layout="fill" />
+                <Image src={image.url} alt={image.alt} fill />
               </S.ContainerImg>
             ))}
           </S.ImagesContainer>

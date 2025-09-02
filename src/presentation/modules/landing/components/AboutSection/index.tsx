@@ -23,7 +23,7 @@ export function AboutSection({ data }: IAboutProps) {
               <S.StyledImage
                 src={content.image.url}
                 alt={content.image.alt}
-                layout="fill"
+                fill
                 objectFit="cover"
                 loading="eager"
               />

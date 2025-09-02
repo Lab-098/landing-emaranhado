@@ -20,7 +20,7 @@ export function Footer({ data }: IFooterProps) {
                 <S.StyledImage
                   src={LogoImg}
                   alt="Logo Emaranhado Criativo"
-                  layout="fill"
+                  fill
                 />
               </S.ContainerImg>
               <S.Title>{data.title}</S.Title>
