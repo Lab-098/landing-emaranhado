@@ -89,7 +89,7 @@ export const CardsContainer = styled(motion.div)`
 
     @media ${theme.media.desktop} {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       flex-wrap: wrap;
       overflow: visible;
       scroll-snap-type: none;

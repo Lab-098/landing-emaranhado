@@ -23,7 +23,7 @@ export const StyledImage = styled(CldImage)`
 
 export const Wave = styled(Image)`
   width: 100%;
-  height: 68px;
+  height: 80px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -31,12 +31,14 @@ export const Wave = styled(Image)`
 `;
 
 export const Content = styled.div`
+  height: 80px;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   ${({ theme }) => css`
     z-index: ${theme.elevation[4]};
@@ -46,6 +48,7 @@ export const Content = styled.div`
 
 export const Name = styled.p`
   font-weight: 600;
+  line-height: 112%;
 
   ${({ theme }) => css`
     color: ${theme.colors.white[100]};
@@ -55,6 +58,7 @@ export const Name = styled.p`
 
 export const Role = styled.p`
   font-weight: 300;
+  line-height: 112%;
 
   ${({ theme }) => css`
     color: ${theme.colors.white[100]};

@@ -1,14 +1,12 @@
 import { ITeamProps } from "@/presentation/modules/landing/components/TeamSection/types";
 
-// const BASE_URL = "/images/team";
-
 export const teamMock: ITeamProps = {
   data: {
     title: "Nosso time",
     members: [
       {
         name: "Elber Abreu",
-        role: "Fundador e Diretor Executivo",
+        role: "Sócio e Diretor de Inovação e Novos Negócios",
         image: {
           id: "elber-abreu",
           url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752115999/Emaranhado_Criativo_-_RND_8249_1_2_vkv5ld.png",
@@ -53,11 +51,38 @@ export const teamMock: ITeamProps = {
         },
       },
       {
-        name: "Sávio Luís",
-        role: "Analista de Projetos",
+        name: "Alana Rafaele",
+        role: "Estágiaria",
         image: {
-          id: "savio-luis",
-          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752115905/Emaranhado_Criativo_-_RND_8248_1_ccfwtz.png",
+          id: "renan-irving",
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1756774477/Alana_Rafaele_Estagia%CC%81ria_wnrrhw.jpg",
+          alt: "team photo",
+        },
+      },
+      {
+        name: "Cristiane Rocha",
+        role: "Estágiaria",
+        image: {
+          id: "renan-irving",
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1756776563/Cristiane_Rocha_Estagia%CC%81ria_1_1_1_xjc72f.png",
+          alt: "team photo",
+        },
+      },
+      {
+        name: "Josias Bogéa",
+        role: "Audiovisual",
+        image: {
+          id: "renan-irving",
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1756774477/Josias_Boge%CC%81a__Audiovisual_qtuf7v.jpg",
+          alt: "team photo",
+        },
+      },
+      {
+        name: "Lucas Costa",
+        role: "Designer",
+        image: {
+          id: "renan-irving",
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1756776570/Lucas_Costa_Designer_2_hmjn5a.jpg",
           alt: "team photo",
         },
       },
