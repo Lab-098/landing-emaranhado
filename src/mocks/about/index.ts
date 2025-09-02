@@ -6,7 +6,7 @@ export const aboutMock: IAboutProps = {
     content: {
       title: "Nascemos para explorar o potencial criativo da sua marca",
       description:
-        "Somos um lab de Branding, Comunicação e Criatividade. Pesquisamos, experimentamos e criamos estratégias únicas para potencializar sua marca, estabelecer conexões genuínas com sua comunidade e alcançar resultados consistentes.",
+        "Somos um lab de Branding, Comunicação e Criatividade. Pesquisamos, experimentamos e criamos estratégias únicas para potencializar sua marca, estabelecer conexões genuínas com sua audiência e alcançar resultados consistentes.",
       tags: [
         "Branding",
         "Comunicação",

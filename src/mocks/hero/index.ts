@@ -2,7 +2,7 @@ import { IHeroProps } from "@/presentation/modules/landing/components/HeroSectio
 
 export const heroMock: IHeroProps = {
   data: {
-    title: "+ que uma agência",
+    title: "não somos uma agência",
     subtitle: "SOMOS UM LAB DE CRIATIVIDADE, BRANDING E COMUNICAÇÃO",
   },
 };

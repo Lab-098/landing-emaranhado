@@ -46,7 +46,7 @@ export const CaseContent = styled.div`
   justify-content: space-between;
 
   ${({ theme }) => css`
-    gap: ${theme.spacing["8x"]};
+    gap: ${theme.spacing["5x"]};
   `}
 `;
 
@@ -56,7 +56,7 @@ export const TextContent = styled.div`
   flex-direction: column;
 
   ${({ theme }) => css`
-    gap: ${theme.spacing["7x"]};
+    gap: ${theme.spacing["6x"]};
   `}
 `;
 
@@ -85,6 +85,13 @@ export const ButtonMenu = styled.button`
   ${({ theme }) => css`
     border: 2px solid ${theme.colors.white[100]};
     border-radius: ${theme.radius.xl};
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+      filter: none;
+      border-color: #99b5ff;
+    }
   `}
 `;
 

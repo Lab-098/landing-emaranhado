@@ -5,6 +5,38 @@ export const casesMock: ICasesProps = {
     title: "Principais cases",
     cases: [
       {
+        id: "casas-brasil",
+        logoClient: {
+          id: "Casas Brasil",
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129968/logo_casas_brasil_mc9yth.svg",
+          alt: "Casas Brasil",
+        },
+        images: [
+          {
+            id: "Casas Brasil 1",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752118935/KV-MES-DAS-MA%CC%83ES_PEC%CC%A7AS-PEC%CC%A7A-CONCEITO-_1_shgjdg.png",
+            alt: "Imagem do evento Casas Brasil",
+          },
+          {
+            id: "Casas Brasil 2",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752118933/Fotos-Produtos-1_1_p21rgu.png",
+            alt: "Imagem do evento Casas Brasil",
+          },
+        ],
+        description:
+          "A Casas Brasil é uma rede de lojas físicas em São Luís e Imperatriz (MA) especializada em itens para cama, mesa, banho, tecidos e armarinho, combinando variedade, tradição e qualidade para o lar.",
+        aboutService:
+          "Gestão estratégica de conteúdo digital, alcançando crescimento de mais de 2 mil seguidores em menos de um ano e média de 100 mil visualizações mensais.",
+        mainServices: [
+          "Conteúdo Digital e Presença Digital",
+          "com foco em planejamento estratégico",
+          "campanhas publicitárias",
+          "ações de live marketing",
+          "criação de conteúdo e ativações que fortalecem a marca e geram engajamento.",
+        ],
+        link: "https://www.instagram.com/casasbrasiloficial/",
+      },
+      {
         id: "case-ja-brasil",
         logoClient: {
           id: "JA Brasil",
@@ -24,7 +56,7 @@ export const casesMock: ICasesProps = {
           },
         ],
         description:
-          "NAUFest (Festival Internacional de Empreendedorismo e Inovação) evento realizado pela Junior Achievement em 3 capitais: Distrito Federal, Amapá e Salvador, impactando mais de 7.000 jovens. ",
+          "NAUFest (Festival Internacional de Empreendedorismo e Inovação), realizado pela Junior Achievement em três capitais: Brasília (DF), Macapá (AP) e Salvador (BA), impactando mais de 7 mil jovens.",
         aboutService:
           "Identidade visual, posicionamento estratégico, presença digital e entregas publicitárias.",
         mainServices: [
@@ -33,32 +65,6 @@ export const casesMock: ICasesProps = {
           "Cobertura audiovisual e fotográfica.",
         ],
         link: "https://www.instagram.com/p/DC6llOMJ2RU/?img_index=8",
-      },
-      {
-        id: "case-ja-pernambuco",
-        logoClient: {
-          id: "JA Pernambuco",
-          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129827/logo_ja_pernambuco_kmxckn.svg",
-          alt: "Logo JA",
-        },
-        images: [
-          {
-            id: "JA Pernambuco 1",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751676938/JA-Case_1_nxatob.png",
-            alt: "Imagem do evento JA Pernambuco",
-          },
-          {
-            id: "JA Pernambuco 2",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129826/image_case_01_fdxs0p.png",
-            alt: "Imagem do evento JA Pernambuco",
-          },
-        ],
-        description:
-          "Unidade da Junior Achievement focada em programas de educação empreendedora.",
-        aboutService:
-          "Criação do site oficial, fortalecendo a presença digital e facilitando o acesso a informações e inscrições.",
-        mainServices: ["Site."],
-        link: "https://jape.org.br/",
       },
       {
         id: "bw",
@@ -80,37 +86,37 @@ export const casesMock: ICasesProps = {
           },
         ],
         description:
-          "Empresa estratégica com foco em eventos e assessoria empresarial.",
+          "A BW Assessoria e Eventos é especializada em planejar, organizar e executar eventos sociais e corporativos, oferecendo soluções personalizadas, criatividade e atenção a cada detalhe.",
         aboutService:
           "Desenvolvimento de branding completo e design visual estratégico para posicionamento no mercado.",
         mainServices: ["Branding e Design Visual Estratégico."],
         link: "https://www.instagram.com/p/C8e5pYWRx0t/",
       },
       {
-        id: "casas-brasil",
+        id: "case-ja-pernambuco",
         logoClient: {
-          id: "Casas Brasil",
-          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129968/logo_casas_brasil_mc9yth.svg",
-          alt: "Casas Brasil",
+          id: "JA Pernambuco",
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129827/logo_ja_pernambuco_kmxckn.svg",
+          alt: "Logo JA",
         },
         images: [
           {
-            id: "Casas Brasil 1",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752118935/KV-MES-DAS-MA%CC%83ES_PEC%CC%A7AS-PEC%CC%A7A-CONCEITO-_1_shgjdg.png",
-            alt: "Imagem do evento Casas Brasil",
+            id: "JA Pernambuco 1",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751676938/JA-Case_1_nxatob.png",
+            alt: "Imagem do evento JA Pernambuco",
           },
           {
-            id: "Casas Brasil 2",
-            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752118933/Fotos-Produtos-1_1_p21rgu.png",
-            alt: "Imagem do evento Casas Brasil",
+            id: "JA Pernambuco 2",
+            url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751129826/image_case_01_fdxs0p.png",
+            alt: "Imagem do evento JA Pernambuco",
           },
         ],
         description:
-          "Rede varejista com foco em artigos para o lar e utilidades domésticas.",
+          "A Junior Achievement Pernambuco é uma organização sem fins lucrativos que atua no estado desde 2004, levando educação empreendedora, inovação e preparo para o mercado de trabalho a milhares de jovens.",
         aboutService:
-          "Gestão de conteúdo digital, crescimento de +2 mil seguidores em menos de 1 ano e média de 100 mil visualizações mensais.",
-        mainServices: ["Conteúdo Digital e Presença Digital"],
-        link: "https://www.instagram.com/casasbrasiloficial/",
+          "Criação do site oficial, fortalecendo a presença digital e facilitando o acesso a informações e inscrições.",
+        mainServices: ["Site."],
+        link: "https://jape.org.br/",
       },
     ],
   },

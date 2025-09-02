@@ -37,7 +37,7 @@ export const servicesMock: IServicesProps = {
           "cobertura de eventos",
           "ensaio fotográfico",
           "webdesign & seo",
-          "direção criativa e produção audivisual",
+          "direção criativa e produção audiovisual",
         ],
       },
     ],

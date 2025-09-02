@@ -21,6 +21,9 @@ export function CasesSection({ data }: ICasesProps) {
   const [topImageCase, bottomImageCase] = currentCase.images;
   const hasMainServices = Boolean(currentCase.mainServices.length);
 
+  const isFirstCase = activeIndexCase === 0;
+  const isLastCase = activeIndexCase === data.cases.length - 1;
+
   const handleBackCase = () => {
     if (activeIndexCase === 0) return;
 
@@ -60,11 +63,25 @@ export function CasesSection({ data }: ICasesProps) {
               <S.TitleSection>
                 <Title title={data.title} />
                 <S.ActionContent>
-                  <S.ButtonMenu type="button" onClick={handleBackCase}>
-                    <PiArrowLeftBold color="#FFF" size={19} />
+                  <S.ButtonMenu
+                    type="button"
+                    onClick={handleBackCase}
+                    disabled={isFirstCase}
+                  >
+                    <PiArrowLeftBold
+                      color={isFirstCase ? "#99B5FF" : "#FFF"}
+                      size={19}
+                    />
                   </S.ButtonMenu>
-                  <S.ButtonMenu type="button" onClick={handleNextCase}>
-                    <PiArrowRightBold color="#FFF" size={19} />
+                  <S.ButtonMenu
+                    type="button"
+                    onClick={handleNextCase}
+                    disabled={isLastCase}
+                  >
+                    <PiArrowRightBold
+                      color={isLastCase ? "#99B5FF" : "#FFF"}
+                      size={19}
+                    />
                   </S.ButtonMenu>
                 </S.ActionContent>
               </S.TitleSection>
