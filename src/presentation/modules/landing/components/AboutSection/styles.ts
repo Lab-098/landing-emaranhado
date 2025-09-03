@@ -85,7 +85,7 @@ export const LeftIllustration = styled(Image)`
     @media ${theme.media.desktop} {
       width: auto;
       height: auto;
-      top: 108px;
+      top: 120px;
       left: 0px;
     }
   `}

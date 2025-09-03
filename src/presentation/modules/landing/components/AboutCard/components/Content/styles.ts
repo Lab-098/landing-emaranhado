@@ -24,10 +24,11 @@ export const Title = styled.h3`
 
   ${({ theme }) => css`
     color: ${theme.colors.white[100]};
-    font-size: ${theme.fontSize.text_xl};
+    font-size: 24px;
 
     @media ${theme.media.desktop} {
       max-width: 100%;
+      font-size: ${theme.fontSize.text_xl};
     }
   `}
 `;

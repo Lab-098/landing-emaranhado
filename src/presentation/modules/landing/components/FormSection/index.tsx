@@ -14,7 +14,7 @@ import { Info } from "./components/Info";
 
 export function FormSection({ data }: IFormProps) {
   return (
-    <S.Container>
+    <S.Container id="contact">
       <Page.Wrapper>
         <S.Content>
           <Info title={data.title} subtitle={data.subtitle} />

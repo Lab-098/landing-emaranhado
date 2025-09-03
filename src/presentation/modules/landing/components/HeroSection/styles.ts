@@ -5,15 +5,19 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
-  height: 60rem;
   position: relative;
 
   ${({ theme }) => css`
     background: ${theme.colors.blue[500]};
     z-index: ${theme.elevation[1]};
+    padding-top: ${theme.spacing["11x"]};
+    padding-bottom: 156px;
+    padding-left: ${theme.spacing["4x"]};
+    padding-right: ${theme.spacing["4x"]};
 
     @media ${theme.media.desktop} {
       height: 54.5rem;
+      padding: 0;
     }
   `}
 `;

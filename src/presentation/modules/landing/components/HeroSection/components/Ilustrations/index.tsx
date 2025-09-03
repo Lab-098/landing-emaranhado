@@ -34,23 +34,23 @@ export function Illustrations() {
         <S.IllustrationSpore
           src={Spore}
           alt="Spore"
-          size={28}
+          size={24}
           top={39}
-          left={11}
+          left={5}
         />
         <S.IllustrationSpore
           src={Spore}
           alt="Spore"
-          size={28}
-          bottom={32}
+          size={24}
+          bottom={38}
           left={17}
         />
         <S.IllustrationSpore
           src={Spore}
           alt="Spore"
-          top={5}
-          right={16}
-          size={40}
+          top={3}
+          right={17}
+          size={38}
         />
       </S.MobileContainer>
       <S.IllustrationLeft

@@ -9,10 +9,10 @@ export const aboutMock: IAboutProps = {
         "Somos um lab de Branding, Comunicação e Criatividade. Pesquisamos, experimentamos e criamos estratégias únicas para potencializar sua marca, estabelecer conexões genuínas com sua audiência e alcançar resultados consistentes.",
       tags: [
         "Branding",
-        "Comunicação",
         "Criatividade",
-        "Estratégias",
         "Resultados",
+        "Comunicação",
+        "Estratégias",
       ],
       image: {
         id: "Time Emaranhado",

@@ -3,7 +3,7 @@
 import { theme } from "@/presentation/external/styled";
 import { Title } from "@/presentation/shared/components/layout";
 import styled, { css } from "styled-components";
-import bgDivider from "@/public/images/core/star.svg";
+import bgDivider from "@/public/images/core/star_yellow.svg";
 import { motion } from "motion/react";
 
 export const Container = styled.section`
@@ -34,7 +34,7 @@ export const Content = styled.div`
 
 export const Divider = styled.div`
   width: 100%;
-  height: 109px;
+  height: 70px;
   background-image: url(${bgDivider.src});
   background-repeat: repeat-x;
   background-size: auto 100%;
