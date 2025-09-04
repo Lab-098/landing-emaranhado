@@ -1,3 +1,5 @@
+"use client";
+
 import { Page } from "@/presentation/shared/components/layout";
 import { Button } from "@/presentation/shared/components/form";
 
@@ -6,8 +8,15 @@ import { Illustrations } from "./components";
 import { IHeroProps } from "./types";
 
 import * as S from "./styles";
+import { useRouter } from "next/navigation";
 
 export function HeroSection({ data }: IHeroProps) {
+  const router = useRouter();
+
+  const handleRedirect = () => {
+    router.push("#cases");
+  };
+
   return (
     <S.Container>
       <Page.Wrapper>
@@ -22,7 +31,7 @@ export function HeroSection({ data }: IHeroProps) {
             <S.SubTitle>{data.subtitle.toUpperCase()}</S.SubTitle>
           </S.TextContainer>
 
-          <Button width={254} height={48}>
+          <Button width={254} height={48} onClick={handleRedirect}>
             NOSSOS CASES
           </Button>
         </S.Content>
