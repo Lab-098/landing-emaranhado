@@ -22,6 +22,9 @@ const mollieRocky = localFont({
 export const metadata: Metadata = {
   title: "Emaranhado Criativo",
   description: "Somos um Lab de Criatividade, Branding e Comunicação",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

@@ -15,11 +15,15 @@ export const clientsMock: IClientsProps = {
         alt: "Imagem da empresa Gomes",
       },
       {
+        id: "21",
+        url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1756777479/Unicef_pijoua.svg",
+        alt: "Imagem da empresa Unicef",
+      },
+      {
         id: "4",
         url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751125718/Buriti_vn3ybc.svg",
         alt: "Imagem da empresa Buriti",
       },
-
       {
         id: "5",
         url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751125719/BW_vfinjd.svg",
@@ -99,11 +103,6 @@ export const clientsMock: IClientsProps = {
         id: "20",
         url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1756777473/Equatorial_yooakr.svg",
         alt: "Imagem da empresa Equatorial",
-      },
-      {
-        id: "21",
-        url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1756777479/Unicef_pijoua.svg",
-        alt: "Imagem da empresa Unicef",
       },
     ],
   },
