@@ -51,6 +51,15 @@ export const teamMock: ITeamProps = {
         },
       },
       {
+        name: "Sávio Luís",
+        role: "Analista de Projetos",
+        image: {
+          id: "savio-luis",
+          url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1752115905/Emaranhado_Criativo_-_RND_8248_1_ccfwtz.png",
+          alt: "team photo",
+        },
+      },
+      {
         name: "Alana Rafaele",
         role: "Estágiaria",
         image: {

@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import * as S from "./styles";
 import { ITeamProps } from "./types";

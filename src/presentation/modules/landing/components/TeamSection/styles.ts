@@ -3,7 +3,7 @@
 import { theme } from "@/presentation/external/styled";
 import { Title } from "@/presentation/shared/components/layout";
 import styled, { css } from "styled-components";
-import bgDivider from "@/public/images/core/star_yellow.svg";
+import bgDivider from "@/public/images/core/star.svg";
 import { motion } from "motion/react";
 
 export const Container = styled.section`
@@ -34,7 +34,7 @@ export const Content = styled.div`
 
 export const Divider = styled.div`
   width: 100%;
-  height: 70px;
+  height: 108px;
   background-image: url(${bgDivider.src});
   background-repeat: repeat-x;
   background-size: auto 100%;
@@ -88,9 +88,14 @@ export const CardsContainer = styled(motion.div)`
     gap: ${theme.spacing["7x"]};
 
     @media ${theme.media.desktop} {
-      display: flex;
+      /* display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
+      flex-wrap: wrap; */
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 32px;
+      justify-content: center;
+
       overflow: visible;
       scroll-snap-type: none;
       &::before,

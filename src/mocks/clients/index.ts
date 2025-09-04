@@ -15,11 +15,6 @@ export const clientsMock: IClientsProps = {
         alt: "Imagem da empresa Gomes",
       },
       {
-        id: "3",
-        url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751125722/Timber_dcydio.svg",
-        alt: "Imagem da empresa Timber",
-      },
-      {
         id: "4",
         url: "https://res.cloudinary.com/dvgciqf3e/image/upload/v1751125718/Buriti_vn3ybc.svg",
         alt: "Imagem da empresa Buriti",
